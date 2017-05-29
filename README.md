@@ -60,6 +60,13 @@ You can configure a GPS for the packet forwarder in two different manners:
 * With the GPS connected as a serial port: by setting `--gps-path`.
 * With `gpsd`, by adding `--gpsd.enable`. You can specify the address of `gpsd` with `--gpsd.address`. `gpsd` has priority over the serial port.
 
+##### GPS configuration
+
+You can configure a GPS for the packet forwarder in two different manners:
+
+* With the GPS connected as a serial port: by setting `--gps-path`.
+* With `gpsd`, by adding `--gpsd.enable`. You can specify the address of `gpsd` with `--gpsd.address`. `gpsd` has priority over the serial port.
+
 ## <a name="contribute"></a>Contributing
 
 Source code for this packet forwarder is MIT licensed. We encourage users to make contributions on [Github](https://github.com/TheThingsNetwork/packet_forwarder) and to participate in discussions on [Slack](https://www.thethingsnetwork.org/forum/t/slack-invitations/3037/4).
