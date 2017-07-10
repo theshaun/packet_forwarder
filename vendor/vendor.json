@@ -465,6 +465,12 @@
 			"revisionTime": "2017-04-14T03:53:08Z"
 		},
 		{
+			"checksumSHA1": "iy7TNc01LWFOGwRwD6v0iDRqtLU=",
+			"path": "github.com/smartystreets/go-aws-auth",
+			"revision": "8ef1316913ee4f44bc48c2456e44a5c1c68ea53b",
+			"revisionTime": "2017-05-04T20:50:21Z"
+		},
+		{
 			"checksumSHA1": "lBehULzb2/kIK3wZ0gz2yNmHq9s=",
 			"path": "github.com/spf13/afero",
 			"revision": "72b31426848c6ef12a7a8e216708cb0d1530f074",
