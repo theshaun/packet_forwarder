@@ -3,6 +3,7 @@
 package util
 
 import (
+	"fmt"
 	"net/http"
 	"os"
 	"time"
@@ -14,8 +15,8 @@ import (
 	"github.com/apex/log"
 	levelHandler "github.com/apex/log/handlers/level"
 	multiHandler "github.com/apex/log/handlers/multi"
+	elastic "github.com/dotpy3/go-elastic"
 	"github.com/spf13/viper"
-	elastic "github.com/tj/go-elastic"
 )
 
 func GetLogger() ttnlog.Interface {
@@ -28,6 +29,13 @@ func GetLogger() ttnlog.Interface {
 
 	if viper.GetBool("elasticsearch.enable") {
 		esClient := elastic.New(viper.GetString("elasticsearch.address"))
+		username := viper.GetString("elasticsearch.username")
+		password := viper.GetString("elasticsearch.password")
+		if username != "" {
+			fmt.Println(username, password)
+			esClient.SetAuthCredentials(username, password)
+		}
+
 		esClient.HTTPClient = &http.Client{Timeout: 5 * time.Second}
 		handlers = append(handlers, levelHandler.New(esHandler.New(&esHandler.Config{
 			Client:     esClient,

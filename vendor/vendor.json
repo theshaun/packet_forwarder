@@ -231,6 +231,12 @@
 			"revisionTime": "2017-02-01T22:58:49Z"
 		},
 		{
+			"checksumSHA1": "9lCdZBSbRHCj2JFVthzWt6Ni6wA=",
+			"path": "github.com/dotpy3/go-elastic",
+			"revision": "74cd588a32d33d6323e4fe18b23b120886057f34",
+			"revisionTime": "2017-07-10T12:50:02Z"
+		},
+		{
 			"checksumSHA1": "yIJRw2F+8wAvC0sg/qviPbpQN6o=",
 			"path": "github.com/dotpy3/go-gpsd",
 			"revision": "4cb31c28593d14dbcbbc474afa3c3b335d0902a9",
@@ -517,12 +523,6 @@
 			"path": "github.com/stianeikeland/go-rpio",
 			"revision": "896db2ee1c7f95240dd6a09e56edf9cece107a34",
 			"revisionTime": "2015-12-08T00:50:14Z"
-		},
-		{
-			"checksumSHA1": "F9X1T07FTXRxBrskitXNtlxZJ6w=",
-			"path": "github.com/tj/go-elastic",
-			"revision": "9a9a2a21e071e6e38f236740c3b650e7316ae67e",
-			"revisionTime": "2016-06-07T20:24:39Z"
 		},
 		{
 			"checksumSHA1": "nL4enNHknemOmxcaPTIJCrJc0/I=",

@@ -61,6 +61,8 @@ You can configure the packet forwarder so that it sends logs to Elasticsearch:
 * `--elasticsearch.enable`: Enable Elasticsearch
 * `--elasticsearch.address`: Address of a Elasticsearch endpoint (optional ; default: `http://localhost:9200`, as a local cluster)
 * `--elasticsearch.prefix`: Prefix of the Elasticsearch index (optional ; default: `packet-forwarder`). There is one Elasticsearch index per day - so if today is July 10th 2017, the logs will be sent to the `{prefix}-2017.07.10` index.
+* `--elasticsearch.username`: Elasticsearch username (optional)
+* `--elasticsearch.password`: Elasticsearch password (optional)
 
 ##### GPS configuration
 
