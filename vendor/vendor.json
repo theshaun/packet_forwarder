@@ -165,6 +165,12 @@
 			"revisionTime": "2017-03-02T15:44:46Z"
 		},
 		{
+			"checksumSHA1": "hF0isDRpV+4w2780hnPDyFNIgAg=",
+			"path": "github.com/TheThingsNetwork/ttn/utils/elasticsearch/handler",
+			"revision": "775f58d0bc86328750f614086b8b1153bfa3f51e",
+			"revisionTime": "2017-07-05T10:21:40Z"
+		},
+		{
 			"checksumSHA1": "0KY2SIIp2CMW5bBk1HWmkOcw70Q=",
 			"path": "github.com/TheThingsNetwork/ttn/utils/errors",
 			"revision": "c5dba333c69b411bf8208639f229a2a3f414eae6",
@@ -187,6 +193,12 @@
 			"path": "github.com/apex/log/handlers/level",
 			"revision": "a97903d8456938a31ce3cb7d58ad3f378f951f24",
 			"revisionTime": "2017-02-22T07:03:41Z"
+		},
+		{
+			"checksumSHA1": "rxQUkWqruIZKpRzdwqrkxfcZvyw=",
+			"path": "github.com/apex/log/handlers/multi",
+			"revision": "8f3a15d95392c8fc202d1e1059f46df21dff2992",
+			"revisionTime": "2017-05-21T20:54:26Z"
 		},
 		{
 			"checksumSHA1": "dPI35hOM4TMrLugm6M1js14jHVQ=",
@@ -499,6 +511,24 @@
 			"path": "github.com/stianeikeland/go-rpio",
 			"revision": "896db2ee1c7f95240dd6a09e56edf9cece107a34",
 			"revisionTime": "2015-12-08T00:50:14Z"
+		},
+		{
+			"checksumSHA1": "F9X1T07FTXRxBrskitXNtlxZJ6w=",
+			"path": "github.com/tj/go-elastic",
+			"revision": "9a9a2a21e071e6e38f236740c3b650e7316ae67e",
+			"revisionTime": "2016-06-07T20:24:39Z"
+		},
+		{
+			"checksumSHA1": "nL4enNHknemOmxcaPTIJCrJc0/I=",
+			"path": "github.com/tj/go-elastic/aliases",
+			"revision": "9a9a2a21e071e6e38f236740c3b650e7316ae67e",
+			"revisionTime": "2016-06-07T20:24:39Z"
+		},
+		{
+			"checksumSHA1": "SgbyhOvKGvet/Nw70Rxa8d3gLZ0=",
+			"path": "github.com/tj/go-elastic/batch",
+			"revision": "9a9a2a21e071e6e38f236740c3b650e7316ae67e",
+			"revisionTime": "2016-06-07T20:24:39Z"
 		},
 		{
 			"checksumSHA1": "ZaU56svwLgiJD0y8JOB3+/mpYBA=",
