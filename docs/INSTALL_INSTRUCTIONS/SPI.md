@@ -7,7 +7,7 @@
 
 ## <a name="build"></a>Build procedure
 
-Make sure you have [installed](https://golang.org/dl/) and [configured](https://golang.org/doc/code.html#GOPATH) your Go environment.
+Make sure you have [installed](https://golang.org/dl/) and [configured](https://golang.org/doc/code.html#GOPATH) Go environment 1.8.3 or higher.
 
 This procedure describes how to build the packet forwarder for a machine that can interact with a concentrator using SPI. If you build the packet forwarder on the machine itself, the SPI configuration will be dynamically determined. Otherwise, see the [SPI configuration section](#spi) to see how to specify the SPI configuration.
 
