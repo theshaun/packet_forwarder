@@ -15,8 +15,8 @@ import (
 	"github.com/apex/log"
 	levelHandler "github.com/apex/log/handlers/level"
 	multiHandler "github.com/apex/log/handlers/multi"
-	elastic "github.com/dotpy3/go-elastic"
 	"github.com/spf13/viper"
+	elastic "github.com/tj/go-elastic"
 )
 
 func GetLogger() ttnlog.Interface {
