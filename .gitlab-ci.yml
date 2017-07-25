@@ -41,7 +41,7 @@ after_script:
   - pushd release_files
   # Change name of the binary
   - mv packet-forwarder* packet-forwarder
-  - ${CC}strip packet-forwarder --strip-unneeded
+  - ${CROSS_COMPILE}strip packet-forwarder --strip-unneeded
   # Create archive
   - tar -cvzf $CI_JOB_NAME.tar.gz *
   - popd
