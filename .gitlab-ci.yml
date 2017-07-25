@@ -10,6 +10,8 @@ cache:
     - go
 
 before_script:
+  # Downloading latest dependencies
+  - apt-get update -y && apt-get install make upx git tar -y
   # Creating release path
   - mkdir release
   # Go build environment variables
@@ -21,7 +23,6 @@ before_script:
   - rm -rf $GOPATH
   - mkdir -p $GOPATH/.cache && ln -s $PWD/.govendor $GOPATH/.cache/govendor
   # Downloading go if not installed yet
-  - apt-get update -y && apt-get install make git tar -y
   - "([[ ! $(go version) =~ \"version\" ]] && apt-get install wget -y && wget https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz && tar -C $PWD -xvzf go1.8.1.linux-amd64.tar.gz) || echo \"Expected Go toolset available in cache\""
   # Copying the packet-forwarder in the gopath
   - mkdir -p $GOPATH/src/github.com/TheThingsNetwork
@@ -41,6 +42,7 @@ after_script:
   - pushd release_files
   # Change name of the binary
   - mv packet-forwarder* packet-forwarder
+  - upx packet-forwarder
   # Create archive
   - tar -cvzf $CI_JOB_NAME.tar.gz *
   - popd
