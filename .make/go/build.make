@@ -29,7 +29,7 @@ else ifeq ($(PLATFORM),kerlink)
 	SENDING_TIME_MARGIN = 60
 endif
 
-LD_FLAGS = -ldflags "-w -X main.version=${PKTFWD_VERSION} -X main.gitCommit=${GIT_COMMIT} -X main.buildDate=${BUILD_DATE} -X github.com/TheThingsNetwork/packet_forwarder/pktfwd.platform=${PLATFORM} -X github.com/TheThingsNetwork/packet_forwarder/cmd.downlinksMargin=${SENDING_TIME_MARGIN}"
+LD_FLAGS = -ldflags "-s -w -X main.version=${PKTFWD_VERSION} -X main.gitCommit=${GIT_COMMIT} -X main.buildDate=${BUILD_DATE} -X github.com/TheThingsNetwork/packet_forwarder/pktfwd.platform=${PLATFORM} -X github.com/TheThingsNetwork/packet_forwarder/cmd.downlinksMargin=${SENDING_TIME_MARGIN}"
 
 # Build the executable
 $(RELEASE_DIR)/$(NAME)-%: $(shell $(GO_FILES)) vendor/vendor.json
