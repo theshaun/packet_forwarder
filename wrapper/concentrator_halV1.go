@@ -228,8 +228,8 @@ func initLoRaStdChannel(stdChan util.ChannelConf) C.struct_lgw_conf_rxif_s {
 		cChannel.bandwidth = C.BW_UNDEFINED
 	}
 
-	if stdChan.Datarate != nil && *stdChan.Datarate >= 7 && *stdChan.Datarate <= 12 {
-		cChannel.datarate = loraChannelSpreadingFactors[*stdChan.Datarate]
+	if stdChan.SpreadFactor != nil && *stdChan.SpreadFactor >= 7 && *stdChan.SpreadFactor <= 12 {
+		cChannel.datarate = loraChannelSpreadingFactors[*stdChan.SpreadFactor]
 	} else {
 		cChannel.datarate = C.DR_UNDEFINED
 	}

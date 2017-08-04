@@ -18,7 +18,7 @@ type ChannelConf struct {
 	IfValue      int32   `json:"if"`
 	Bandwidth    *uint32 `json:"bandwidth,omitempty"`
 	Datarate     *uint32 `json:"datarate,omitempty"`
-	SpreadFactor *uint8  `json:"spread_factor,omitempty"`
+	SpreadFactor *uint32 `json:"spread_factor,omitempty"`
 }
 
 type ChannelFreqConf struct {
