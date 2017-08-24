@@ -106,7 +106,7 @@ func UpdateGPSData(ctx log.Interface) error {
 	nmea := C.lgw_parse_nmea(C.CString(gpsRawData), C.int(cap(buffer)))
 	if nmea != C.NMEA_RMC {
 		// No sync to do
-		ctx.Debug("Unknown GPS status")
+		ctx.Debug("GPS ignoring extraneous NMEA message (!= RMC)")
 		return nil
 	}
 
